@@ -93,7 +93,7 @@
 				const mixer = new THREE.AnimationMixer(gltf.scene);
 
 				for (const anim of gltf.animations) {
-					mixer.clipAction(anim).setLoop(THREE.LoopOnce).play();
+					mixer.clipAction(anim).setLoop(THREE.LoopRepeat).play();
 				}
 
 				gltf.scene.traverse(function (child) {
